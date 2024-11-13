@@ -15,8 +15,9 @@ This repository contains the code for the paper _"Teacher privileged distillatio
 
 ## Content
 
-- **code:**
-  - `TPD_loss.py`. Main file with TPD loss for tensorflow.
+- `TPD_loss.py`. Main file with TPD loss for tensorflow.
+- `example.py`. Example to understand how to implement TPD in tensorflow.
+- `utils.py`. Useful functions.
 
 ## Contact
 
