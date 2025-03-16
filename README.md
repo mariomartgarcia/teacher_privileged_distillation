@@ -12,7 +12,7 @@ This repository contains the code for the paper _"Privileged learning via a mult
 
 <img width="1228" alt="Screenshot 2025-03-16 at 12 36 52" src="https://github.com/user-attachments/assets/1517f7fe-3352-47ea-99ab-84c7b2ca6bb3" />
 
-[unet_image.pptx](https://github.com/user-attachments/files/19271243/unet_image.pptx)
+<img width="1219" alt="Screenshot 2025-03-16 at 12 37 27" src="https://github.com/user-attachments/assets/072a927f-3a8a-4125-81af-79a583961b32" />
 
 ## Content
 
