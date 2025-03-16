@@ -1,4 +1,4 @@
-# Teacher privileged distillation: How to deal with imperfect teachers?
+# Privileged learning via a multi-task distilled approach
 
 [python-img]: https://img.shields.io/badge/Made%20with-Python-blue
 [ama-img]: https://img.shields.io/badge/Ask%20me-anything-yellowgreen
@@ -8,16 +8,22 @@
 ![Ask me anything][ama-img]
 ![Work in progress][wip-img]
 
-This repository contains the code for the paper _"Teacher privileged distillation: How to deal with imperfect teachers?"_. The paradigm of learning using privileged information leverages privileged features present at training time, but not at prediction, as additional training information. The privileged learning process is addressed through a knowledge distillation perspective: information from a teacher learned with regular and privileged features is transferred to a student composed exclusively of regular features. While most approaches assume perfect knowledge for the teacher, it can commit mistakes. Assuming that, we propose a novel privileged distillation framework with a double contribution. Firstly, a designed function to imitate the teacher when it classifies correctly and to differ in cases of misclassification. Secondly, an adaptation of the cross-entropy loss to appropriately penalize the instances where the student outperforms the teacher. Its effectiveness is empirically demonstrated on datasets with imperfect teachers, significantly enhancing the performance of state-of-the-art frameworks. Furthermore, necessary conditions for successful privileged learning are presented, along with a dataset categorization based on the information provided by the privileged features.
+This repository contains the code for the paper _"Privileged learning via a multi-task distilled approach"_. The learning using privileged information paradigm leverages relevant features unavailable at deployment time for model training. In this paper, we propose a multi-task privileged framework that combines two types of tasks. First, the privileged-prediction task involves using regular features (available in both training and deployment) to predict privileged information, working as an intermediate step to guide the learning process. Second, the main learning objective, the target task, uses the predicted privileged information along with the regular features to make the final target prediction. Furthermore, knowledge distillation techniques are included within the target task to enhance the knowledge transfer of privileged information. Experimental results show improvements in tabular datasets and image-related problems compared to state-of-the-art approaches. Additionally, new metrics are introduced to analyze misclassification causes and refine the proposed multi-task privileged learning to correct errors. 
 
-<img width="500" alt="Screenshot 2024-06-19 at 16 59 13" src="https://github.com/mariomartgarcia/TPD/assets/63496191/25bac469-4d56-40ee-a563-167378f90726">
+[MT_KD.pdf](https://github.com/user-attachments/files/19271242/MT_KD.pdf)
 
+[unet_image.pptx](https://github.com/user-attachments/files/19271243/unet_image.pptx)
 
 ## Content
 
-- `TPD_loss.py`. Main file with TPD loss for tensorflow.
-- `example.py`. Example to understand how to implement TPD in tensorflow.
-- `utils.py`. Useful functions.
+- `DC_DR.py`. Interpretability for privileged multi-task learning. 
+- `MT_weightP.py`. Handles weight processing for the MT model.  
+- `MT_main.py`. Main script for running the model.  
+- `datasets.py`. Manages dataset loading and preprocessing.  
+- `models.py`. Defines model architectures.  
+- `utils.py`. Contains utility functions for various tasks.  
+- `download_datasets.py`. Script for downloading required datasets.  
+- `requirements.txt`. Lists dependencies needed for the project.  
 
 ## Contact
 
