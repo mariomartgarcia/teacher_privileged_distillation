@@ -30,7 +30,7 @@ The corresponding BiBTeX citation is given below:
 ```bib
 @article{martinez2025teacher,
   title={Teacher privileged distillation: How to deal with imperfect teachers?},
-  author={Mart{\'\i}nez-Garc{\'\i}a, Mario and Inza, I{\~n}aki and Lozano, Jose A},
+  author={Martínez-García, Mario and Inza, Iñaki and Lozano, Jose A},
   journal={Knowledge-Based Systems},
   pages={113338},
   year={2025},
