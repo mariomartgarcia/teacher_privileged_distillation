@@ -27,7 +27,7 @@ Mario Martínez García - mmartinez@bcamath.org
 ## Citation
 
 The corresponding BiBTeX citation is given below:
-
+```bib
 @article{martinez2025teacher,
   title={Teacher privileged distillation: How to deal with imperfect teachers?},
   author={Mart{\'\i}nez-Garc{\'\i}a, Mario and Inza, I{\~n}aki and Lozano, Jose A},
@@ -36,3 +36,4 @@ The corresponding BiBTeX citation is given below:
   year={2025},
   publisher={Elsevier}
 }
+```
